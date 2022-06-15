@@ -5,7 +5,7 @@ Tarea-examen 2 for the class taught by [Dr. Victor de la Luz](https://github.com
 - [Luis Yovanny Bedolla Galvan](https://github.com/GalvanLuis) (<gruisu93@gmail.com>)
 
 ## Introduction
-El objetivo es medir la latencia entre un servidor y otro enviando un archivo de un determinado tamano por medio de SCP
+El objetivo es medir la latencia entre un servidor y otro enviando un archivo de un determinado tamano por medio de SCP esta implementacion solo es para subida, para bajada de archivos se usaria wget que resulta ser mucho mas rapido pero no esta implementado.
 
 ## Usage
 >$ python3 pingmb.py <MB_size> <ip_address>
