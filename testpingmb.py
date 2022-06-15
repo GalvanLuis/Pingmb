@@ -12,6 +12,10 @@ for i in range(MB_Begin,MB_End,MB_Step):
     r.append(pingmb(IP_SRC,i))
     x.append(i)
     print(f"{i} MBs => {r[-1]:.02f} s")
-    
+
+fig = plt.figure()    
 plt.plot(x,r)
-plt.savefig("latency.png")
+fig.suptitle("tamano vs tiempo")
+plt.xlabel("Tamano")
+plt.ylabel("Tiempo")
+plt.savefig("plot.png")

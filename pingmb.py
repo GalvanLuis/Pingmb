@@ -1,8 +1,10 @@
 import subprocess,sys,re
 
-MB="A"*(1024*1024)
+#Archivo de tamano 1024kb
+MB="."*(1024*1024)
 
 def pingmb(MBs,ip,verbose=False):
+    #multiplicador de archivo dinamico * el tamano recibido en el input
     with open('tmp','w') as t:
         for i in range(0,int(MBs)):
             t.write(MB)
@@ -23,9 +25,9 @@ def pingmb(MBs,ip,verbose=False):
     
 if(__name__=="__main__"):
     if(len(sys.argv)!=3):
-        print("Usage: pingmb.py IP MB_size")
+        print("python3 pingmb.py MB_size, IP")
     else:
         try:
             pingmb(sys.argv[1],sys.argv[2],verbose=True)
         except:
-            print("Malformatted input or server declined upload.")
+            print("Nop, vuelve a ingresar los parametros correctamente")
