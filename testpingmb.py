@@ -1,8 +1,9 @@
+
 from pingmb import pingmb
 import sys
 import matplotlib.pyplot as plt
 
-_,MB_Begin,MB_End,MB_Step,IP_SRC=[0]+[int(x) for x in sys.argv[1:-1]]+[sys.argv[-1]]
+_,MB_Begin,MB_End,MB_Step,IP_SRC=[1]+[int(x) for x in sys.argv[1:-1]]+[sys.argv[1]]
 
 
 x=[1]
